@@ -1,30 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SteveSounds - An Accessible Steve Sounds Soundboard | Beyond the Button | CSUN 2024 | Presentations | A11y Tools</title>
+
+<head>
+  <meta charset="utf-8">
+  <title>An Accessible (and rude) Logan Roy Soundboard</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, shrink-to-fit=no">
-  <meta name="description" content="A soundboard put together as part of an accessibility presentation.">
+  <meta name="description" content="A soundboard put together as part of an accessibility presentation. This is the 'after' example, where it is fully accessible due to having real buttons and a description of each sound.">
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-  <style>
-    body {font-size: 1.3em;}
-    img {max-width: 40%;float: right;margin-left: 5%;}
-  </style>
-  </head>
-  <body>
-    <main>
-      <p><img src="SteveSounds.png" alt="A PhotoShop adaptation of the Beach Boys ‘Pet Sounds’ album, except all of the Beach Boys have Steve’s head"></p>
-      <h1>SteveSounds - An Accessible Steve Sounds Soundboard</h1>
-      <ul>
-        <li><a href="v1-fake-buttons.html">Fake buttons version - not accessible</a></li>
-        <li><a href="v2-real-buttons.html">Real buttons</a></li>
-        <li><a href="v3-fully-accessible.html">Real buttons - with written descriptions!</a></li>
-      </ul>
-      <!-- 
-      <p>For context - in the presentation "<a href="https://2023.stateofthebrowser.com/speaker/ian-lloyd/">Accessibility Is Easy ... Except for When It Isn't</a>", I made this point:</p>
-      -->
-      <p>"Using real buttons is all well and good but it can only get you so far. For most sites, this will represent just a small percentage of the UI, of interactive elements unless, of course, your website is pretty much ONLY a collection of buttons, like a soundboard."</p>
-      <p>And so I built this to prove the point</p>
-    </main>
-  </body>
+  <link rel="stylesheet" href="logansounds.css?v=3apr">
+</head>
+<body>
+ <main>
+  <img class="s" src="loganSounds.png" alt="">
+  <h1>An Accessible (and rude) Logan Roy Soundboard</h1>
+  <details>
+    <summary>Delay sound?</summary>
+    <fieldset role="radiogroup" aria-describedby="why-delay">
+      <legend>Add a delay after pressing button</legend>
+      <div><input type="radio" name="delay" value="0" id="delay0" checked> <label for="delay0">No delay</label></div>
+      <div><input type="radio" name="delay" value="1" id="delay1"> <label for="delay1">1 second</label></div>
+      <div><input type="radio" name="delay" value="2" id="delay2"> <label for="delay2">2 seconds</label></div>
+      <div><input type="radio" name="delay" value="3" id="delay3"> <label for="delay3">3 seconds</label></div>
+      <p id="why-delay">The time delay may be useful for screen reader users so that the button name/description does not clash/overlap with sounds</p>
+    </fieldset>
+  </details>
+  <div class="logan grid">
+    <div>
+      <button type="button" id="logan1" aria-describedby="loganDesc1">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc1">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan2" aria-describedby="loganDesc2">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc2">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan3" aria-describedby="loganDesc3">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc3">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan4" aria-describedby="loganDesc4">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc4">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan5" aria-describedby="loganDesc5">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc5">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan6" aria-describedby="loganDesc6">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc6">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan7" aria-describedby="loganDesc7">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc7">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan8" aria-describedby="loganDesc8">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc8">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan9" aria-describedby="loganDesc9">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc9">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan10" aria-describedby="loganDesc10">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc10">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan11" aria-describedby="loganDesc11">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc11">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan12" aria-describedby="loganDesc12">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc12">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan13" aria-describedby="loganDesc13">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc13">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan14" aria-describedby="loganDesc14">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc14">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan15" aria-describedby="loganDesc15">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc15">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan16" aria-describedby="loganDesc16">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc16">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan17" aria-describedby="loganDesc17">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc17">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan18" aria-describedby="loganDesc18">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc18">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan19" aria-describedby="loganDesc19">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc19">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan20" aria-describedby="loganDesc20">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc20">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan21" aria-describedby="loganDesc21">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc21">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan22" aria-describedby="loganDesc22">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc22">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan23" aria-describedby="loganDesc23">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc23">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan24" aria-describedby="loganDesc24">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc24">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan25" aria-describedby="loganDesc25">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc25">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan26" aria-describedby="loganDesc26">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc26">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan27" aria-describedby="loganDesc27">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc27">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan28" aria-describedby="loganDesc28">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc28">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan29" aria-describedby="loganDesc29">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc29">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan30" aria-describedby="loganDesc30">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc30">Fuck Off!</div>
+    </div>
+    <div>
+      <button type="button" id="logan31" aria-describedby="loganDesc31">
+        <span>TBC</span>
+      </button>
+      <div id="loganDesc31">Fuck Off!</div>
+    </div>
+  </div>
+ </main>
+
+<div id="caption-viewer"></div>
+
+<script src="loganboard.js?v=2oct"></script>
+</body>
 </html>

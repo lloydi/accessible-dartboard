@@ -1,0 +1,19 @@
+body {font-family: sans-serif;}
+main {text-align: center;}
+fieldset {text-align: left;}
+.grid {background: #ffe6cc;padding: 2em;display: grid;grid-gap: 1rem;clear: both}
+@supports (width: min(250px, 100%)) {.grid {grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));}}
+.grid > div {text-align: center;font-weight: bold;}
+.grid button+div,.grid .button+div {margin: 0.5em 0;}
+button,.button {background: darkblue;color: white;border: 4px solid #331a00;padding: 1em;border-radius: 0.5em;font-size: 1em;font-weight: bold;width:150px;height:150px;overflow:hidden;}
+button:focus-visible,.button:focus-visible {outline: 4px solid #331a00;outline-offset: 5px;}
+button:active,.button:active {filter:invert();transform: scale(1.2);}
+button span[aria-hidden],.button span[aria-hidden] {display: inline-block;}
+button+div,.button+div {padding-top: 10px;/*height: 2em;*/}
+button,.button {position:relative;}
+button>span,.button>span {background: rgba(0,0,0,0.7);position:absolute;bottom: 0;left: 0;right: 0;font-size: 1em;display: inline-block;padding: 0.3em 0.3em 0 0.3em;}
+button {background:url(logans/logan.png);background-size: cover;}
+
+#caption-viewer:empty {display: none;}
+#caption-viewer {background: rgba(0,0,0,0.8);color:#fff;text-align: center;position:fixed;font-size: 2.5em;width: calc(100% - 2em);bottom: 1em;left: 1em;right: 1em;border-radius: 0.2em;padding: 0.3em;}
+img.s {max-width: 100px;float: right;margin: 0 0 1em 1em;}
