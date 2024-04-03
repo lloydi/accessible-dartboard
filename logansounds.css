@@ -1,7 +1,7 @@
-body {font-family: sans-serif;}
+body {font-family: sans-serif;background:black;color:white;padding: 1em;}
 main {text-align: center;}
 fieldset {text-align: left;}
-.grid {background: #ffe6cc;padding: 2em;display: grid;grid-gap: 1rem;clear: both}
+.grid {background: #a3ade1;color:black;padding: 2em;display: grid;grid-gap: 1rem;clear: both}
 @supports (width: min(250px, 100%)) {.grid {grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));}}
 .grid > div {text-align: center;font-weight: bold;}
 .grid button+div,.grid .button+div {margin: 0.5em 0;}
