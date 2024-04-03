@@ -14,9 +14,10 @@ Array.from(loganButtons).forEach(loganButton => {
   setTimeout(function(){sayIt(whichloganSound)}, (delayTime*1000));
   //show caption
   if (captionViewer){
-   const soundbiteIDref = loganButton.getAttribute("aria-describedBy")
-   const soundbite = document.querySelector("#" + soundbiteIDref).textContent.trim();
-   updateStatus(soundbite);
+   // const soundbiteIDref = loganButton.getAttribute("aria-describedBy")
+   // const soundbite = document.querySelector("#" + soundbiteIDref).textContent.trim();
+   // updateStatus(soundbite);
+   updateStatus("Fuck off!");
   }
  });
 });
